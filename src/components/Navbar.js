@@ -23,19 +23,14 @@ class Navbar extends React.Component {
         const { isOpen } = this.state;
         return (
             <div className={`fixed md:relative z-10 ${background ?? 'md:bg-gray-50 '}`}>
-                <div style={{background: "#282828"}} className='py-3.5'>
+                <div style={{background: "#161b22"}} className='py-3.5'>
                     <Layout>
                     <nav className='flex flex-row justify-evenly items-center gap-4 text-gray-800 whitespace-nowrap'>
-                            {/*<div className='hidden lg:block flex-shrink-0'>
-                                <a href='/'>
-                                    <Logo className='w-9 h-9' fill='currentColor' />
-                                </a>
-                            </div>
-                            <button className='md:hidden z-20 flex-shrink-0 p-1 shadow-md bg-gradient-to-r from-c-blue to-c-purple text-white rounded-full' onClick={this.toggle.bind(this)}>
+                            <button className='md:hidden z-20 flex-shrink-0 p-1 shadow-md bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full' onClick={this.toggle.bind(this)}>
                                 <svg xmlns="http://www.w3.org/2000/svg" className='h-5 w-5' fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isOpen ? `M6 18L18 6M6 6l12 12` : `M4 6h16M4 12h16M4 18h7`} />
                                 </svg>
-                            </button>*/}
+                            </button>
 
                             <div className='hidden flex-1 md:flex flex-row justify-evenly lg:justify-end items-center gap-4 text-xs'>
                                 {
