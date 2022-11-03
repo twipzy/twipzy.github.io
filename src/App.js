@@ -22,7 +22,7 @@ class App extends React.Component {
 
 		return (
 			
-			<Router>
+			<Router basemname={`/${process.env.PUBLIC_URL}`}>
 				<Switch>
 					{/* real pages */}
 					<Route exact path='/' component={Home} />
