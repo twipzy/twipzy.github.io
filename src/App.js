@@ -22,24 +22,24 @@ class App extends React.Component {
 
 		return (
 			
-			<Router basemname={`/${process.env.PUBLIC_URL}`}>
+			<Router>
 				<Switch>
 					{/* real pages */}
-					<Route path='/' exact component={Home} />
-					<Route path='/download' exact component={Download} />
+					<Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
+					<Route exact path={process.env.PUBLIC_URL + '/download'} component={Download} />
 
-					<Route path='/github' exact component={() => {
+					<Route exact path={process.env.PUBLIC_URL+ '/github'} component={() => {
 						window.location.replace(GitHubRepoUrl);
 						return null;
 					}} />
 
-					<Route path='/twitter' exact component={() => {
+					<Route exact path={process.env.PUBLIC_URL+ '/twitter'} component={() => {
 						window.location.replace(TwitterURL);
 						return null;
 					}} />
 
 					{/* 404 */}
-					<Route exact component={NotFound} />
+					<Route component={NotFound} />
 				</Switch>
 			</Router>
 		);
