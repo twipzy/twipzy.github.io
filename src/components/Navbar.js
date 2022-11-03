@@ -22,8 +22,8 @@ class Navbar extends React.Component {
         const { background } = this.props;
         const { isOpen } = this.state;
         return (
-            <div className={`fixed md:relative z-10 ${background ?? 'md:bg-gray-50 '}`}>
-                <div style={{background: "#161b22"}} className='py-3.5'>
+            <div className={`fixed md:relative z-10 ${background ?? 'md:bg-[#282828] '}`}>
+                <div className='py-3.5'>
                     <Layout>
                     <nav className='flex flex-row justify-evenly items-center gap-4 text-gray-800 whitespace-nowrap'>
                             <button className='md:hidden z-20 flex-shrink-0 p-1 shadow-md bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full' onClick={this.toggle.bind(this)}>
