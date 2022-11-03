@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@400;500;700;900&display=swap');
+.collapse-css-transition {
+    transition: height 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bgcolor-change-on-hover{
+    background: #387c84;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    transition-property: background-color, color;
+    -webkit-transition: all 0.2s ease;
+    -webkit-transition-property:  background-color, color;
+}
+.bgcolor-change-on-hover:hover {
+        background: #326c73;
+        border: #326c73;
+}
+
+.color-change-on-hover{
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    transition-property: background-color, color;
+    -webkit-transition: all 0.2s ease;
+    -webkit-transition-property:  background-color, color;
+}
+.color-change-on-hover:hover {
+        color: #387c84;
+}
+
+.float-on-hover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.float-on-hover:hover, .float-on-hover:focus, .float-on-hover:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+.blob-mask {
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+
+    -webkit-mask-position: 22%;
+    mask-position: 22%;
+
+    -webkit-mask-size: contain;
+    mask-size: contain;
+
+    -webkit-mask-image: url('../assets/svgs/blob.svg');
+    mask-image: url('../assets/svgs/blob.svg');
+}
+
+.admonition {
+    padding: 0.5rem;
+    padding-left: 0.75rem;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    background-color: #fafafa;
+    border-radius: 0.15rem;
+    border: 1px solid #eaeaea;
+}
+
+.admonition-warning {
+    border-left: 0.4rem solid #faa61f;
+}
