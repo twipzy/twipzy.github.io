@@ -25,15 +25,15 @@ class App extends React.Component {
 			<Router>
 				<Switch>
 					{/* real pages */}
-					<Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
-					<Route exact path={process.env.PUBLIC_URL + '/download'} component={Download} />
+					<Route exact path= {process.env.PUBLIC_URL + '/'} component={Home} />
+					<Route exact path= {process.env.PUBLIC_URL + '/download'} component={Download} />
 
-					<Route exact path={process.env.PUBLIC_URL+ '/github'} component={() => {
+					<Route exact path= {process.env.PUBLIC_URL + '/github'} component={() => {
 						window.location.replace(GitHubRepoUrl);
 						return null;
 					}} />
 
-					<Route exact path={process.env.PUBLIC_URL+ '/twitter'} component={() => {
+					<Route exact path= {process.env.PUBLIC_URL + '/twitter'} component={() => {
 						window.location.replace(TwitterURL);
 						return null;
 					}} />
