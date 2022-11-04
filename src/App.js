@@ -26,7 +26,7 @@ class App extends React.Component {
 				<Switch>
 					{/* real pages */}
 					<Route exact path= '/' component={Home} />
-					<Route exact path= '/twipzy.github.io/download' component={Download} />
+					<Route exact path= '/download' component={Download} />
 
 					<Route exact path= '/github' component={() => {
 						window.location.replace(GitHubRepoUrl);
