@@ -22,6 +22,12 @@
         border: #326c73;
 }
 
+/*li, ul{
+    width:100%;
+    align-items: center;
+    border-bottom: 1px solid #484848;
+  }*/
+
 .color-change-on-hover{
     color: white;
     text-decoration: none;

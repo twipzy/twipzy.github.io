@@ -14,7 +14,7 @@ class Footer extends React.Component {
             <div style={{background: "#282828"}} className='py-8 bg-gray-50 text-gray-500'>
                 <Layout>
                     <div className='flex flex-row justify-evenly items-center gap-4'>
-                        <p style={{color:"white", fontFamily: "Lato", fontWeight:"300" }}className='flex-1 text-xs'>© 2022 Pro Settings. All rights reserved.<span className='hidden sm:inline'></span></p>
+                        <p style={{color:"white", fontFamily: "Lato", fontWeight:"300" }}className='flex-1 text-xs'><span className='hidden sm:inline'>© 2022 Pro Settings. All rights reserved.</span></p>
                         <div className='flex-shrink-0 flex items-center gap-4'>
                             <a href={TwitterURL} target='_blank' rel='noreferrer'>
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 hover:text-[#326c73]" viewBox="0 0 24 24" fill="currentColor">

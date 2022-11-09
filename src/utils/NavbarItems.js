@@ -26,7 +26,8 @@ export const Items = [
         style: STYLES.DEFAULT
     },
     {
-        label: 'Download Now',
+        label: 'Download',
+        mobilelabel: '',
         url: '/download',
         active: false,
         newTab: false,
