@@ -11,7 +11,7 @@ class Footer extends React.Component {
 
     render() {
         return (
-            <div style={{background: "#282828"}} className='py-8 bg-gray-50 text-gray-500'>
+            <div style={{background: "#181818"}} className='py-8 bg-gray-50 text-gray-500'>
                 <Layout>
                     <div className='flex flex-row justify-evenly items-center gap-4'>
                         <p style={{color:"white", fontFamily: "Lato", fontWeight:"300" }}className='flex-1 text-xs'><span className='hidden sm:inline'>© 2022 Pro Settings. All rights reserved.</span></p>
